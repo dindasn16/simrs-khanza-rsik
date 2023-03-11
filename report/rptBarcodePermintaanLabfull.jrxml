@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="581" pageHeight="467" columnWidth="568" leftMargin="8" rightMargin="5" topMargin="28" bottomMargin="17" uuid="b000fb1f-2089-42f3-a4d6-4811d93f4ad7">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="nama" class="java.lang.String"/>
+	<parameter name="namars" class="java.lang.String"/>
+	<parameter name="alamatrs" class="java.lang.String"/>
+	<parameter name="kotars" class="java.lang.String"/>
+	<parameter name="propinsirs" class="java.lang.String"/>
+	<parameter name="kontakrs" class="java.lang.String"/>
+	<parameter name="alamat" class="java.lang.String"/>
+	<parameter name="norm" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select noorder from permintaan_lab]]>
+	</queryString>
+	<field name="noorder" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="187">
+			<frame>
+				<reportElement x="11" y="9" width="171" height="72" uuid="33ba9a60-50bf-482b-be2b-588392095df0"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<componentElement>
+					<reportElement x="11" y="27" width="152" height="27" uuid="d8e2fe31-2397-460d-bd8d-a0a72ae42b6c"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="1" barHeight="25">
+						<jr:codeExpression><![CDATA[$F{noorder}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="34" y="16" width="129" height="10" uuid="d875b97e-9fff-40d4-a886-660f8e88e023">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nama}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="83" y="6" width="80" height="10" uuid="78d51a78-272e-41d5-a703-b032a60cdf17">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tgl.lahir : "+$P{alamat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="34" y="6" width="49" height="10" uuid="84ad97d6-2575-4280-9693-3acb76f390f1">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{norm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="56" width="152" height="10" uuid="af6cdfd0-b01f-483f-8572-5b4b91214724"/>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{noorder}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="16" width="21" height="10" uuid="3195b7db-dc34-4735-93c8-9e90f5146612">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Nama]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="6" width="21" height="10" uuid="add587ef-98e0-4264-9371-2f1d50c3c890">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[No.RM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="6" width="3" height="10" uuid="2dddbc76-c68d-4a6d-a5f5-06150b52864f">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="16" width="3" height="10" uuid="9c4bd507-96a5-47c3-9858-3efe30c095eb">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="201" y="9" width="171" height="72" uuid="6e155e0b-a6de-46b1-b310-4fb051fcfe33"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<componentElement>
+					<reportElement x="11" y="27" width="152" height="27" uuid="33401909-4fd1-40ec-b0b4-e22eeb019340"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="1" barHeight="25">
+						<jr:codeExpression><![CDATA[$F{noorder}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="34" y="16" width="129" height="10" uuid="8b6559e5-85b7-4b89-aded-c4354f0607bf">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nama}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="83" y="6" width="80" height="10" uuid="e13a3a5c-1a7c-47dc-b2ca-4c0e1b18dae5">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tgl.lahir : "+$P{alamat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="34" y="6" width="49" height="10" uuid="50eb2ec8-825c-4393-baf1-16fb0c7cdba6">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{norm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="56" width="152" height="10" uuid="5c1d442e-2577-4f4c-8471-13f02665ac62"/>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{noorder}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="16" width="21" height="10" uuid="204ba21c-c3d8-451f-97e3-d95944a89247">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Nama]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="6" width="21" height="10" uuid="0164ed61-00e8-43b0-9b46-7317482b1927">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[No.RM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="6" width="3" height="10" uuid="ed3e972f-b91c-437e-9661-70475bfd1f28">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="16" width="3" height="10" uuid="a3066195-9d58-4e07-a2b4-a6fb21f6a753">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="391" y="9" width="171" height="72" uuid="946f9795-184c-425e-a8bb-b52eb1559b64"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<componentElement>
+					<reportElement x="11" y="26" width="152" height="27" uuid="c94a6397-be89-4bb7-80ac-d5b15f363e81"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="1" barHeight="25">
+						<jr:codeExpression><![CDATA[$F{noorder}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="34" y="15" width="129" height="10" uuid="8b37ce5d-c406-4c07-bdb8-ad5fa765fd35">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nama}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="83" y="5" width="80" height="10" uuid="7e899b75-13cd-49ff-a111-010aa8ac2d82">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tgl.lahir : "+$P{alamat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="34" y="5" width="49" height="10" uuid="9ae4ba78-5fd3-4241-a6e3-7e1fb91ac2fa">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{norm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="55" width="152" height="10" uuid="faa451c8-4f3f-4f57-b478-78520105134f"/>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{noorder}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="15" width="21" height="10" uuid="33007912-af60-4438-ba55-244bff0b93d7">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Nama]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="5" width="21" height="10" uuid="1ec9d8aa-5550-4009-a03e-151aecde5276">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[No.RM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="5" width="3" height="10" uuid="835255aa-364b-469c-b40c-ea3e5c87963f">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="15" width="3" height="10" uuid="81b245ba-9fda-4349-8007-a0d194ee2210">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="11" y="110" width="171" height="72" uuid="489dc67a-753c-4019-9b31-6589a018cf2d"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<componentElement>
+					<reportElement x="11" y="27" width="152" height="27" uuid="2ad483d3-36fc-4a44-9a11-492aacb75bfb"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="1" barHeight="25">
+						<jr:codeExpression><![CDATA[$F{noorder}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="34" y="16" width="129" height="10" uuid="0e0ba317-378d-4a5a-9ceb-b203bd792ae3">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nama}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="83" y="6" width="80" height="10" uuid="6491b851-7b42-4ee3-9503-690185a1b64b">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tgl.lahir : "+$P{alamat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="34" y="6" width="49" height="10" uuid="dc93eaa2-2ac6-4a41-931d-9a05bef362e6">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{norm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="56" width="152" height="10" uuid="c8a4bf7c-f92d-41da-a838-a43376f61304"/>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{noorder}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="16" width="21" height="10" uuid="60232b73-b0fa-44bb-ba8a-24289da6c2cb">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Nama]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="6" width="21" height="10" uuid="0dd5955a-ac91-4a89-9dd0-2abc03710fb3">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[No.RM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="6" width="3" height="10" uuid="a578ee45-3dc8-4598-b413-51a4dbd8e70a">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="16" width="3" height="10" uuid="18c20f54-5d39-4259-9665-6d766ad6d0a1">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="201" y="110" width="171" height="72" uuid="64048032-aecd-4fc6-9114-fbd9d0339907"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<componentElement>
+					<reportElement x="11" y="27" width="152" height="27" uuid="c6dab3fd-fa1a-4682-8034-41ddd17ba6a2"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="1" barHeight="25">
+						<jr:codeExpression><![CDATA[$F{noorder}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="34" y="16" width="129" height="10" uuid="3a0ff9f1-3857-47eb-aa2d-0b471cf93505">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nama}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="83" y="6" width="80" height="10" uuid="9f26e149-4f42-408e-bf10-84b6974d1bc8">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tgl.lahir : "+$P{alamat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="34" y="6" width="49" height="10" uuid="f13b6e58-35d5-4805-af89-2f10ebc10b12">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{norm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="56" width="152" height="10" uuid="3f705a2d-9cf1-4370-89f4-ca60a23de5f6"/>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{noorder}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="16" width="21" height="10" uuid="52f12572-47a3-414f-91b5-0a5c1a096bc5">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Nama]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="6" width="21" height="10" uuid="d0c416b0-8076-484f-9a4f-ddc768079813">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[No.RM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="6" width="3" height="10" uuid="f884a450-ed13-4057-983f-7ba0f1aab7bb">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="16" width="3" height="10" uuid="e60842a7-6477-4d9e-aa3a-87570c604b16">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="391" y="110" width="171" height="72" uuid="97c88889-4a06-464d-8c4c-db6b5966f8f8"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<componentElement>
+					<reportElement x="11" y="27" width="152" height="27" uuid="f28c2ce1-59b3-4ff1-a653-25d0b5c48374"/>
+					<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="1" barHeight="25">
+						<jr:codeExpression><![CDATA[$F{noorder}]]></jr:codeExpression>
+					</jr:barbecue>
+				</componentElement>
+				<textField>
+					<reportElement x="34" y="16" width="129" height="10" uuid="446b9fe5-16d4-4635-a45e-19a75d0a0da4">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{nama}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="83" y="6" width="80" height="10" uuid="2063ce38-c2ee-4e5a-ba72-5092af489e36">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Tgl.lahir : "+$P{alamat}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="34" y="6" width="49" height="10" uuid="b703f291-8891-4754-94c5-d6d41e4d8251">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{norm}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="11" y="56" width="152" height="10" uuid="2df3e67c-9671-46fd-88d2-479d9b88643f"/>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{noorder}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="16" width="21" height="10" uuid="77c0fb9a-7235-4438-8503-4aef7aac587a">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[Nama]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="6" width="21" height="10" uuid="1491a27e-bcbe-47d6-aa8f-6d10534fa536">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[No.RM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="6" width="3" height="10" uuid="2061d0ec-ee58-4b94-b71d-5e71e2ab7b4d">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="31" y="16" width="3" height="10" uuid="1142c0cf-bd43-4dcb-a698-b10814c24527">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Tahoma" size="8"/>
+						<paragraph lineSpacing="Single"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+</jasperReport>

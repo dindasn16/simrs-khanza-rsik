@@ -8121,7 +8121,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         jMenu2.setForeground(new java.awt.Color(255, 255, 255));
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/17.png"))); // NOI18N
-        jMenu2.setText("11 Maret 23 Development By IT RSIK");
+        jMenu2.setText("13 Maret 23 Development By IT RSIK");
         jMenu2.setEnabled(false);
         jMenu2.setFocusable(false);
         jMenu2.setName("jMenu2"); // NOI18N

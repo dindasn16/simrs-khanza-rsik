@@ -135,15 +135,15 @@ public class DlgPermintaan extends javax.swing.JDialog {
             @Override
             public void windowClosed(WindowEvent e) {
                 if(caribangsal.getTable().getSelectedRow()!= -1){   
-//                    if(i==1){
+                    if(i==1){
                         kdgudangTujuan.setText(caribangsal.getTable().getValueAt(caribangsal.getTable().getSelectedRow(),0).toString());
                         nmgudangTujuan.setText(caribangsal.getTable().getValueAt(caribangsal.getTable().getSelectedRow(),1).toString());
                         kdgudangTujuan.requestFocus();
-//                    }else if(i==2){
-//                        kdgudangasal.setText(caribangsal.getTable().getValueAt(caribangsal.getTable().getSelectedRow(),0).toString());
-//                        nmgudangasal.setText(caribangsal.getTable().getValueAt(caribangsal.getTable().getSelectedRow(),1).toString());
-//                        kdgudangasal.requestFocus();
-//                    }
+                    }else if(i==2){
+                        kdgudangasal.setText(caribangsal.getTable().getValueAt(caribangsal.getTable().getSelectedRow(),0).toString());
+                        nmgudangasal.setText(caribangsal.getTable().getValueAt(caribangsal.getTable().getSelectedRow(),1).toString());
+                        kdgudangasal.requestFocus();
+                    }
                 } 
             }
             @Override
@@ -156,34 +156,34 @@ public class DlgPermintaan extends javax.swing.JDialog {
             public void windowDeactivated(WindowEvent e) {}
         });
 
-        cariruangan.addWindowListener(new WindowListener() {
-            @Override
-            public void windowOpened(WindowEvent e) {}
-            @Override
-            public void windowClosing(WindowEvent e) {}
-            @Override
-            public void windowClosed(WindowEvent e) {
-                if(cariruangan.getTable().getSelectedRow()!= -1){   
-//                    if(i==1){
-//                        kdgudangTujuan.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),0).toString());
-//                        nmgudangTujuan.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),1).toString());
-//                        kdgudangTujuan.requestFocus();
-//                    }else if(i==2){
-                        kdgudangasal.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),0).toString());
-                        nmgudangasal.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),1).toString());
-                        kdgudangasal.requestFocus();
-//                    }
-                } 
-            }
-            @Override
-            public void windowIconified(WindowEvent e) {}
-            @Override
-            public void windowDeiconified(WindowEvent e) {}
-            @Override
-            public void windowActivated(WindowEvent e) {}
-            @Override
-            public void windowDeactivated(WindowEvent e) {}
-        });
+//        cariruangan.addWindowListener(new WindowListener() {
+//            @Override
+//            public void windowOpened(WindowEvent e) {}
+//            @Override
+//            public void windowClosing(WindowEvent e) {}
+//            @Override
+//            public void windowClosed(WindowEvent e) {
+//                if(cariruangan.getTable().getSelectedRow()!= -1){   
+////                    if(i==1){
+////                        kdgudangTujuan.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),0).toString());
+////                        nmgudangTujuan.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),1).toString());
+////                        kdgudangTujuan.requestFocus();
+////                    }else if(i==2){
+//                        kdgudangasal.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),0).toString());
+//                        nmgudangasal.setText(cariruangan.getTable().getValueAt(cariruangan.getTable().getSelectedRow(),1).toString());
+//                        kdgudangasal.requestFocus();
+////                    }
+//                } 
+//            }
+//            @Override
+//            public void windowIconified(WindowEvent e) {}
+//            @Override
+//            public void windowDeiconified(WindowEvent e) {}
+//            @Override
+//            public void windowActivated(WindowEvent e) {}
+//            @Override
+//            public void windowDeactivated(WindowEvent e) {}
+//        });
         
         pegawai.addWindowListener(new WindowListener() {
             @Override
@@ -822,7 +822,7 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
     }//GEN-LAST:event_btnPetugasActionPerformed
 
     private void btnSuplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuplierActionPerformed
-//        i=1;
+        i=1;
         caribangsal.isCek();
         caribangsal.emptTeks();
         caribangsal.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
@@ -875,20 +875,20 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
     }//GEN-LAST:event_NoPermintaanKeyPressed
 
     private void btnSuplier1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuplier1ActionPerformed
-//old        i=2;
-//        caribangsal.isCek();
-//        caribangsal.emptTeks();
-//        caribangsal.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-//        caribangsal.setLocationRelativeTo(internalFrame1);
-//        caribangsal.setAlwaysOnTop(false);
-//        caribangsal.setVisible(true);
+        i=2;
+        caribangsal.isCek();
+        caribangsal.emptTeks();
+        caribangsal.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
+        caribangsal.setLocationRelativeTo(internalFrame1);
+        caribangsal.setAlwaysOnTop(false);
+        caribangsal.setVisible(true);
 
-        cariruangan.isCek();
-        cariruangan.emptTeks();
-        cariruangan.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
-        cariruangan.setLocationRelativeTo(internalFrame1);
-        cariruangan.setAlwaysOnTop(false);
-        cariruangan.setVisible(true);
+//        cariruangan.isCek();
+//        cariruangan.emptTeks();
+//        cariruangan.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
+//        cariruangan.setLocationRelativeTo(internalFrame1);
+//        cariruangan.setAlwaysOnTop(false);
+//        cariruangan.setVisible(true);
     }//GEN-LAST:event_btnSuplier1ActionPerformed
 
     private void kdgudangasalKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kdgudangasalKeyPressed
